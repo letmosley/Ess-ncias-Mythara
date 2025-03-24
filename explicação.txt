@@ -1,0 +1,11 @@
+Aqui, a função percorre cada chave do objeto effects usando um for...in. A variável essence representa cada chave dentro de effects, ou seja, cada tipo de essência. Para cada essência, o código faz o seguinte:
+
+effects[essence] acessa o valor do efeito associado àquela essência.
+
+value é o valor da opção selecionada pelo usuário, que pode ser um número (geralmente positivo ou negativo).
+
+effects[essence] * value calcula o efeito multiplicado pelo valor da opção escolhida.
+
+scores[essence] += effects[essence] * value; atualiza a pontuação da essência, somando o efeito multiplicado pelo valor à pontuação existente.
+
+Por exemplo, se o usuário escolher uma opção com valor 1, e a essência "fire" tiver um efeito de 2, a pontuação de "fire" aumentará em 2 * 1 = 2. Se a essência "water" tiver um efeito de -1, a pontuação de "water" diminuirá em -1 * 1 = -1.

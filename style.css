@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(imagesStyle/Guia\ rápido\ .png);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-image: url(imagesStyle/fundoQuestão.png);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.intro-container {
+    text-align: center;
+    background-image: url(imagesStyle/fundoComeço.png);
+    background-size: cover;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: #18668b;
+    font-family: 'Ballkids Game', sans-serif;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));                                      
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.mythara{
+    color: #7c4cc9;
+    font-family: 'Qotaro', sans-serif;
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+}
+
+p {
+    color: #000000;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: larger;  
+    filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+}
+
+.option, .start-button {
+    background: #91ecf8c5;
+    color: #222222;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option:hover, .start-button:hover {
+    background: #66dff5;
+}
+
+.essences {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.essence-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+   
+}
+
+.essence-image:hover {
+    transform: scale(1.2);
+}
+
+/* Botões do resultado */
+#result-container button {
+    display: inline-block;
+    background: linear-gradient(120deg, #27ecdc93, #3cc1ff94);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+#result-container button:hover {
+    background: linear-gradient(120deg, #27ecdb, #3cc1ff);
+    transform: scale(1.1);
+}
+
+#result-container button:active {
+    transform: scale(0.9);
+    background: linear-gradient(120deg, #27ecdb, #3cc1ff);
+}
+
+/* Estilo do progresso */
+#progress {
+    font-size: 25px;
+    color: #0064b6;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#options{
+
+    justify-content: center;
+    margin-top: 20px;
+    display: grid;
+    width: 50%;
+}
+
+#quiz-container{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.item{
+    color: #2c4e9d;
+    font-size: 25px;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+@media (max-width: 768px) {
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .essence-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .option, .start-button {
+        padding: 8px 16px;
+        font-size: 1.2rem;
+    }
+
+    #progress {
+        font-size: 1.2rem;
+    }
+
+    .item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 2.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .essence-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .option, .start-button {
+        padding: 6px 12px;
+        font-size: 1rem;
+    }
+
+    #progress {
+        font-size: 1rem;
+    }
+
+    .item {
+        font-size: 0.9rem;
+    }
+}
+
+div > img{
+    columns: 2;
+}
